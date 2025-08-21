@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta name="description" content="Bamboo Home Care Service delivers trusted, affordable in-home support for seniors, ensuring comfort, dignity, personalized care, and peace of mind.">
 	<meta name="keywords" content="best home care service,home care service,home health aide,home care service near me,home health care,home health care,skilled nursing home care services,home physiotherapy services for elderly,home care after surgery services near me,home care services in Nagercoil,best home care agency,best home care agency in Nagercoil,best home health care services near me,home health aide,best home health aide in Nagercoil,bamboo home care service,best home care trust in Nagercoil,best home care trust in nagercoil">
-	<meta name="author" content="Awaiken">
 	<!-- Page Title -->
     <title>Bamboo Home Care Nursing Services</title>
 	<!-- Favicon Icon -->
@@ -30,6 +29,13 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+            <script type="text/javascript">
+              (function() {
+              emailjs.init("zn5VS7yoGjKX2t1Th");
+              })(); 
+              </script>
+     
 </head>
 <body>
 
@@ -148,7 +154,7 @@
                 <div class="col-lg-7">
                     <!-- Book Contact Form Start -->
                     <div class="contact-form wow fadeInUp" data-wow-delay="0.2s">
-                        <form id="contactForm" action="contact-form" method="POST" data-toggle="validator">
+                        <form id="contactForm" action="" method="POST" data-toggle="validator">
                             <div class="row">                                
                                 <div class="form-group col-md-6 mb-4">
                                     <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required="">
@@ -176,7 +182,7 @@
                                 </div>
             
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn-default"><span>Submit Message</span></button>
+                                    <button type="submit" onclick="sendemail()" class="btn-default"><span>Submit Message</span></button>
                                     <div id="msgSubmit" class="h3 hidden"></div>
                                 </div>
                             </div>
@@ -394,12 +400,38 @@
 
     <!-- Contact  -->
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script src="./js/contact.js">
+<script>
+  function sendemail(e) {
+    e.preventDefault(); // Prevent page refresh
 
+    var email = document.getElementById("email").value;
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var message = document.getElementById("message").value;
+    var phone = document.getElementById("phone").value;
+
+    // Template params must match your EmailJS template variables
+    var templateParams = {
+      email: email,
+      name: fname + " " + lname,
+      message: message,
+      phone: phone,
+    };
+
+    emailjs.send('service_rwv3l7b', 'template_2uf1b8u', templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert(" Sent successfully!");
+        document.getElementById("contactForm").reset(); // clear form
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert(" Failed to send. Please try again.");
+      });
+  }
+
+  // Attach the function to the form
+  document.getElementById("contactForm").addEventListener("submit", sendemail);
 </script>
-
-
 
 
 
