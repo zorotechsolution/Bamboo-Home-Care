@@ -32,6 +32,7 @@
      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
             <script type="text/javascript">
               (function() {
+                // This want to change email for claint
               emailjs.init("zn5VS7yoGjKX2t1Th");
               })(); 
               </script>
@@ -74,7 +75,7 @@
                         
                         <!-- Header Btn Start -->
                         <div class="header-btn">
-                            <a href="mailto:bamboohomecarenursingservices@gmail.com" class="btn-default">book appointment</a>
+                            <a href="tel:+919876543210" class="btn-default">book appointment</a>
                         </div>
                         <!-- Header Btn End -->
 					</div>
@@ -309,7 +310,7 @@
                         <div class="footer-social-links">
                             <ul>
                                 <li><a target="_blank" href="https://www.instagram.com/bamboohomecare?igsh=eG9hd2cwdjBjenRj"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a target="_blank" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/share/176uMmYv6j/"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 <li><a target="_blank" href="https://wa.me/919025215133"><i class="fa-brands fa-whatsapp"></i></i></a></li>
                             </ul>
                         </div>
@@ -418,7 +419,12 @@
       phone: phone,
     };
 
-    emailjs.send('service_rwv3l7b', 'template_2uf1b8u', templateParams)
+
+// This want to change email for claint
+
+
+
+    emailjs.send('service_*******', 'template_*******', templateParams)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
         alert(" Sent successfully!");
