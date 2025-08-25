@@ -855,10 +855,12 @@ header.main-header .header-sticky.active{
 }
 
 .hero-content-box{
-	background: var(--primary-color);
+	background:linear-gradient(rgba(13, 13, 16, 0.581) , rgba(13, 13, 16, 0.389)), url(../images/Delivering.png);
+	opacity: 0.6;
 	border-radius: 20px;
 	margin-bottom: 30px;
 	padding: 3.125vw;
+	
 }
 
 .hero-content-box .section-title{
@@ -937,8 +939,6 @@ header.main-header .header-sticky.active{
 }
 
 .working-hours-header{
-	border-bottom: 1px solid var(--dark-divider-color);
-	margin-bottom: 30px;
 	padding-bottom: 30px;
 }
 
@@ -946,6 +946,12 @@ header.main-header .header-sticky.active{
 	font-size: 20px;
 	color: var(--white-color);
 	margin-bottom: 10px;
+
+}
+.boder-worker{
+		border-bottom: 1px solid var(--dark-divider-color);
+		margin-bottom: 15px;
+
 }
 
 .working-hours-header p{
@@ -2861,7 +2867,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: var(--accent-color) url('../images/page-header-bg.png') no-repeat;
+	background:linear-gradient(rgba(0, 0, 255, 0.144),rgba(0, 0, 255, 0.144)),  url('../images/servicesMain.png') no-repeat;
 	background-position: top center;
 	background-size: 100% auto;
 	padding: 145px 0;
