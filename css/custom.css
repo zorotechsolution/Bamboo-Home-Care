@@ -7161,5 +7161,44 @@ header.main-header .header-sticky.active{
       height: 30px;
       margin-top: 15px;
     }
+	.Terms-Conditions-main,.privacy-policy-main{
+		padding: 0px 20px;
+		margin-bottom: 20px;
+	}
+
+
+	.Terms-Conditions-Heading,.privacy-policy-Heading{
+		text-align: center;
+		/* margin-bottom: 15px; */
+		padding: 50px 0px;
+		background-color: var(--accent-color);
+		border-radius: 5px;
+		color: var(--bg-color);
+	}
+	.Terms-Conditions-Date,.privacy-policy-Date{
+		text-align: end;
+	}
+	.Terms-Conditions-para{
+		text-align: center;
+
+	}
+	.Terms-Conditions-container p,.privacy-policy-container p{
+		padding-left: 48px;
+	}
+
+	.Terms-Conditions-container,.privacy-policy-container{
+		padding: 0px 30px;
+	}
+	.Terms-Conditions-container h2,.privacy-policy-container h2{
+		color: var(--accent-color);
+		margin: 5px 0px;
+	}
+
+	.Terms-Conditions-list,.privacy-policy-list{
+		line-height: 1.5;
+	}
+	.marqee{
+		padding: 0px 10px;
+	}
 
 	
