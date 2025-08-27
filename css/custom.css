@@ -7243,5 +7243,8 @@ header.main-header .header-sticky.active{
 	.content-Final p{
 		padding-left: 10px;
 	}
+	.content-Title p{
+		padding: 5px 0px 0px 15px ;
+	}
 	}
 	
