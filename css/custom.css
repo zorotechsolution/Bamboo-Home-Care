@@ -1,9 +1,4 @@
-/* ----------------------------------------------------------------------------------------
-* Author        : Awaiken
-* Template Name : Carely - Senior Care & Elderly Nursing HTML Template
-* File          : CSS File
-* Version       : 1.0
-* ---------------------------------------------------------------------------------------- */
+
 /* INDEX
 ----------------------------------------------------------------------------------------
 01. Global Variables
@@ -7201,4 +7196,52 @@ header.main-header .header-sticky.active{
 		padding: 0px 10px;
 	}
 
+	.Simple-header h1{
+		text-align: center;
+		color: var(--accent-color);
+		padding: 40px 0px;
+
+	}
+
+	.simple-img{
+		padding: 10px 50px;
+	}
+	.simple-img img{
+		border-radius: 10px;
+	}
+	.content{
+		padding: 30px 100px;
+		text-align: center;
+	}
+	.content-Title h4 ,.content-Final h6{
+		color: var(--accent-color);
+	}
+	.content-Title p{
+		padding: 5px 0px 0px 50px ;
+	}
+	.hr{
+		background-color: var(--accent-color);
+		 height: 2px;       
+    	border: none;
+		
+	}
+	.content-Title ul{
+		line-height: 2.0;
+	}
+	.content-Final p{
+		padding-left: 40px;
+	}
+
+	@media (max-width: 576px) {
+		.simple-img{
+		padding: 20px 10px ;
+	}
+	.content{
+		padding: 30px 10px;
+		text-align: center;
+	}
+	.content-Final p{
+		padding-left: 10px;
+	}
+	}
 	
